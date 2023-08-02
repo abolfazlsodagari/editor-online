@@ -39,9 +39,9 @@ const HomePage: FC<IHomePageProps> = () => {
         <div className="min-h-[50%] min-w-[250px] flex flex-col gap-4">
           <div className="flex justify-between">
             <p>output:</p>
-            <span>id:#output-box</span>
+            <span>id: #output-box</span>
           </div>
-          <div className="whitespace-pre-wrap" id="output-box"></div>
+          <pre className="whitespace-pre-wrap" id="output-box"></pre>
         </div>
       </div>
     </>
