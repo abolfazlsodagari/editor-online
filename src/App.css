@@ -1,0 +1,14 @@
+.CodeMirror {
+  min-height: 450px;
+  height: 100%;
+  max-height: 450px;
+  color: #fff;
+}
+
+.CodeMirror-gutters {
+  background: #1d1e22 !important;
+}
+
+.CodeMirror-scroll {
+  background: #1d1e22;
+}
