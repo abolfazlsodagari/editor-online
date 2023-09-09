@@ -4,12 +4,12 @@ import "codemirror/theme/material.css";
 import "codemirror/mode/xml/xml";
 import "codemirror/mode/javascript/javascript";
 import "codemirror/mode/css/css";
-
+// External import
 import { Stack, Typography } from "@mui/material";
 import { Controlled as ControlledEditor } from "react-codemirror2";
 
 const Editor = ({ heading, language, value, onChange }) => {
-  // handle change
+  // handle change editor
   const handleChange = (editor, data, value) => {
     onChange(value);
   };
@@ -27,6 +27,7 @@ const Editor = ({ heading, language, value, onChange }) => {
       >
         <Typography variant="body1">{heading}</Typography>
       </Stack>
+
       {/* editor code */}
       <ControlledEditor
         onBeforeChange={handleChange}

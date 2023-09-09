@@ -1,10 +1,13 @@
-import { useContext } from "react";
+// Built-in import
+import React, { useContext } from "react";
+// External import
 import { Grid, Stack } from "@mui/material";
+// Internal import
 import { EditorContext } from "../../../context/EditorProvider";
 import Editor from "../../shared/editor";
 
 const CodeEditors = () => {
-  // Getting html-css-js codes from context
+  // Getting (Html Css Javascript) options
   const { html, css, js, setHtml, setCss, setJs } = useContext(EditorContext);
 
   return (

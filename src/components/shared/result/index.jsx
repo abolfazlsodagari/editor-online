@@ -1,16 +1,19 @@
-import { useContext } from "react";
-import { EditorContext } from "../../../context/EditorProvider";
+// Built-in import
+import React, { useContext } from "react";
+// External import
 import { Stack } from "@mui/material";
+// Internal import
+import { EditorContext } from "../../../context/EditorProvider";
 
 const Result = () => {
-  // Getting html, css and js codes
+  // Getting (HTML CSS JAVASCRIPT) codes
   const { html, css, js } = useContext(EditorContext);
 
   return (
     <Stack
+      height="500px"
       sx={{
         background: html || css || js ? null : "#444857",
-        height: "500px",
       }}
     >
       <iframe
