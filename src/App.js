@@ -1,14 +1,11 @@
-import CodeEditors from "./components/pages/home/code-editors";
-import Result from "./components/shared/result";
 import "./App.css";
+import React from "react";
+import HomeContent from "./components/pages/home";
 
 function App() {
   return (
     <div minWidth="1200px">
-      {/* code editors (html-css-js) */}
-      <CodeEditors />
-      {/* result codes */}
-      <Result />
+      <HomeContent />
     </div>
   );
 }
